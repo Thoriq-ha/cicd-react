@@ -1,8 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test("renders welcome message", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const welcomeElement = screen.getByText(
+    /Welcome to My Simple UI React App bbb/i
+  );
+  expect(welcomeElement).toBeInTheDocument();
+});
+
+test("renders CICD test message", () => {
+  render(<App />);
+  const cicdTestElement = screen.getByText(/This is a for cicd test/i);
+  expect(cicdTestElement).toBeInTheDocument();
 });
