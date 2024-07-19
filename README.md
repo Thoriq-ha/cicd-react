@@ -25,7 +25,7 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini secara lokal:
    Pertama, clone repository ke mesin lokal Anda:
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/Thoriq-ha/cicd-react
    ```
 
 2. **Masuk ke Direktori Proyek**
@@ -33,7 +33,7 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini secara lokal:
    Pindah ke direktori proyek yang baru saja Anda clone:
 
    ```bash
-   cd your-repository-name
+   cd cicd-react
    ```
 
 3. **Instal Dependencies**
