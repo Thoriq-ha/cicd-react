@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# React CI/CD Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deskripsi
 
-## Available Scripts
+Aplikasi ini adalah contoh aplikasi React yang telah dikonfigurasi dengan sistem CI/CD menggunakan GitHub Actions. Aplikasi ini dirancang untuk menunjukkan proses otomatisasi pengujian dan deployment menggunakan pipeline CI/CD dengan GitHub Actions dan Vercel.
 
-In the project directory, you can run:
+### Fitur
 
-### `npm start`
+- **Automated Testing**: Pengujian otomatis untuk memastikan aplikasi berjalan dengan benar.
+- **Automated Deployment**: Deployment otomatis ke Vercel setiap kali ada perubahan di branch `main`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prasyarat
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Sebelum menjalankan aplikasi ini, pastikan Anda memiliki hal berikut:
 
-### `npm test`
+- **Node.js** (versi 18 atau lebih baru)
+- **npm** atau **yarn** (terpasang secara otomatis dengan Node.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Panduan Instalasi dan Jalankan di Lokal
 
-### `npm run build`
+Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini secara lokal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone Repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Pertama, clone repository ke mesin lokal Anda:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/your-repository-name.git
+   ```
 
-### `npm run eject`
+2. **Masuk ke Direktori Proyek**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Pindah ke direktori proyek yang baru saja Anda clone:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd your-repository-name
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Instal Dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Instal dependencies proyek menggunakan npm atau yarn:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Atau jika Anda menggunakan yarn:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   yarn install
+   ```
 
-### Code Splitting
+4. **Jalankan Aplikasi**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Jalankan aplikasi dengan perintah berikut:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Atau jika Anda menggunakan yarn:
 
-### Making a Progressive Web App
+   ```bash
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   Aplikasi akan tersedia di [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-### Advanced Configuration
+5. **Jalankan Tes**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   Untuk menjalankan tes, gunakan perintah berikut:
 
-### Deployment
+   ```bash
+   npm test
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   Atau jika Anda menggunakan yarn:
 
-### `npm run build` fails to minify
+   ```bash
+   yarn test
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. **Build Aplikasi**
+
+   Untuk membuat build produksi dari aplikasi, jalankan:
+
+   ```bash
+   npm run build
+   ```
+
+   Atau jika Anda menggunakan yarn:
+
+   ```bash
+   yarn build
+   ```
+
+   Build yang dihasilkan akan berada di direktori `build`.
+
+## Konfigurasi CI/CD
+
+Aplikasi ini menggunakan GitHub Actions untuk CI/CD. File konfigurasi GitHub Actions berada di `.github/workflows/ci.yml`. Workflow ini mencakup:
+
+- **Build**: Membangun aplikasi dan menjalankan tes.
+- **Deploy**: Mendeploy aplikasi ke Vercel secara otomatis menggunakan token Vercel yang disimpan sebagai secret di GitHub.
+
+## Deployment
+
+Aplikasi secara otomatis dideploy ke Vercel setiap kali ada perubahan di branch `main`. Pastikan token Vercel Anda telah disimpan sebagai secret di repository GitHub dengan nama `VERCEL_TOKEN`.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan buat pull request dengan perubahan yang Anda buat.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah **MIT License** - lihat `LICENSE` untuk detail lebih lanjut.
