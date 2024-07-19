@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Welcome to My Simple UI React App bbb</h1>
-        <p>This is for CICD test.</p>
+        <p>This is for CICD: try fetch data</p>
       </header>
       <main>
         {data ? (
