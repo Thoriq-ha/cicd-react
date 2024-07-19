@@ -9,6 +9,6 @@ test("renders a greeting message", () => {
   render(<Greeting name="Thoriq" />);
 
   // Temukan elemen dengan query dan periksa isinya
-  const greetingElement = screen.getByText(/Hello, Thaoriq!/i);
+  const greetingElement = screen.getByText(/Hello, Thoriq!/i);
   expect(greetingElement).toBeInTheDocument();
 });
