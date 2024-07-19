@@ -9,6 +9,8 @@ test("renders welcome message", () => {
 
 test("renders CICD test message", () => {
   render(<App />);
-  const cicdTestElement = screen.getByText(/This is for CICD: try fetch data/i);
+  const cicdTestElement = screen.getByText(
+    /This application is set up with automated testing and deployment through a CI\/CD pipeline using GitHub Actions\. Try fetching data\./i
+  );
   expect(cicdTestElement).toBeInTheDocument();
 });

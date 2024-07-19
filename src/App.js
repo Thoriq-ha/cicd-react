@@ -24,7 +24,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Welcome to My Simple UI React App</h1>
-        <p>This is for CICD: try fetch data</p>
+        <p>
+          This application is set up with automated testing and deployment
+          through a CI/CD pipeline using GitHub Actions. Try fetching data.
+        </p>
       </header>
       <main>
         {data ? (
