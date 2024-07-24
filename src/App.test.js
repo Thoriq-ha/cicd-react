@@ -3,7 +3,9 @@ import App from "./App";
 
 test("renders welcome message", () => {
   render(<App />);
-  const welcomeElement = screen.getByText(/Welcome to My Simple UI React App/i);
+  const welcomeElement = screen.getByText(
+    /Welcome to My Simple UIUX React App/i
+  );
   expect(welcomeElement).toBeInTheDocument();
 });
 

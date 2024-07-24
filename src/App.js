@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to My Simple UI React App</h1>
+        <h1>Welcome to My Simple UIUX React App</h1>
         <p>
           This application is set up with automated testing and deployment
           through a CI/CD pipeline using GitHub Actions. Try fetching data.
