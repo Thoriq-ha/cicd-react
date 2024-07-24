@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
 test("renders welcome message", () => {
   render(<App />);
@@ -10,7 +10,7 @@ test("renders welcome message", () => {
 test("renders CICD test message", () => {
   render(<App />);
   const cicdTestElement = screen.getByText(
-    /This application is set up with automated testing and deployment through a CI\/CD pipeline using GitHub Actions\. Try fetching data\./i
+    /Test Running CICID - is This application is set up with automated testing and deployment through a CI\/CD pipeline using GitHub Actions\. Try fetching data\./i
   );
   expect(cicdTestElement).toBeInTheDocument();
 });
