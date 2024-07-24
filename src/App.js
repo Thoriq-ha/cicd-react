@@ -25,7 +25,7 @@ function App() {
       <header className="App-header">
         <h1>Welcome to My Simple UI React App</h1>
         <p>
-          This application is set up with automated testing and deployment
+          Test Running CICID - is set up with automated testing and deployment
           through a CI/CD pipeline using GitHub Actions. Try fetching data.
         </p>
       </header>
